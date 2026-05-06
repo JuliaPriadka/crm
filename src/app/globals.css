@@ -9,7 +9,10 @@
 }
 
 body{
-  font-family: Plus Jakarta Sans;
+  /* font-family: Plus Jakarta Sans; */
   background-color: #FAFAFA;
   color: #111827;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }

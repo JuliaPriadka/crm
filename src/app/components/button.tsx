@@ -12,7 +12,7 @@ export default function Button({disabled,...rest}:ButtonProps) {
   return (
     <button
     {...rest}
-      className={clsx("w-full h-11 rounded-2xl bg-gray-900 text-zinc-50 font-medium outline-none border-none ",disabled &&"text-zinc-100",!disabled&&" hover:bg-gray-800 active:bg-gray-950")}
+      className={clsx("h-11 rounded-2xl px-5 py-2.5 bg-gray-900 text-zinc-50 font-medium outline-none border-none ",disabled &&"text-zinc-100",!disabled&&" hover:bg-gray-800 active:bg-gray-950")}
     >
       Add company
     </button>
