@@ -1,21 +1,16 @@
 import React from 'react';
 import clsx from 'clsx';
+import { Status } from '@/utils/api';
 
-export enum Status {
-  Active = 'active',
-  NotActive = 'notActive',
-  Pending = 'pending',
-  Suspended = 'suspended',
-}
 
 export interface StatusLabelProps {
-  children: React.ReactNode;
   status: Status;
   disabled?: boolean;
+  label:string;
 }
 
 export default function StatusLabel({
-  children,
+label,
   status,
   disabled,
 }: StatusLabelProps) {
@@ -33,7 +28,7 @@ export default function StatusLabel({
       )}
     >
       <div className="w-1 h-1 bg-current rounded-2xl"></div>
-      {children}
+      {label}
     </div>
   );
 }
