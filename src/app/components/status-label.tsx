@@ -1,6 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
-import { Status } from '@/utils/api';
+import { Status } from '@/lib/api';
 
 
 export interface StatusLabelProps {

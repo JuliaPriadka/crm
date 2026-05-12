@@ -6,7 +6,7 @@ import Image from 'next/image';
 import check from "../../../public/icons/check.png";
 import xMark from "../../../public/icons/x-mark.png";
 import clsx from "clsx";
-import { Status } from "@/utils/api";
+import { Status } from "@/lib/api";
 
 
 export interface CompanyRowProps {

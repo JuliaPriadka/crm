@@ -5,7 +5,7 @@ import SearchInput from '../../components/search-input';
 import AddCompanyBtn from '../../components/add-company-btn';
 import CompanyTable from '../../components/company-table';
 import CompanyRow from '../../components/company-row';
-import { Status } from '@/utils/api';
+import { Status } from '@/lib/api';
 
 export interface PageProps {}
 

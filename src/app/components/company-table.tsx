@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useQuery } from '@tanstack/react-query';
-import { getCompanies } from '@/utils/api';
+import { getCompanies } from '@/lib/api';
 
 export interface CompanyTableProps {
   children?: React.ReactNode;
