@@ -34,106 +34,52 @@ export const getCompanies = (init?: RequestInit) => {
   return sendRequest<Company[]>(buildUrl('companies'), init);
 };
 
-export const stats=[
-  {label:"Total promotions",
-    counter:432,
-  },
-  {label:"Total category",
-    counter:8,},
-  {label:"New companies",
-    counter:28,},
-  {label:"Total active companies",
-    counter:670,}
+export const stats = [
+  { label: 'Total promotions', counter: 432 },
+  { label: 'Total category', counter: 8 },
+  { label: 'New companies', counter: 28 },
+  { label: 'Total active companies', counter: 670 },
 ];
 
 export enum StatCardType {
   Dark = 'dark',
   Light = 'light',
-};
+}
 
-export const categoriesStats=[
-    {label:"Products",
-    counter:4,
-  },
-      {label:"Products",
-    counter:8,
-  },
-      {label:"Products",
-    counter:26,
-  },
-      {label:"Products",
-    counter:1,
-  },
-      {label:"Products",
-    counter:37,
-  },
-      {label:"Products",
-    counter:22,
-  },
-      {label:"Products",
-    counter:4,
-  },
-      {label:"Products",
-    counter:12,
-  },
-]
+export const categoriesStats = [
+  { label: 'Products', counter: 4 },
+  { label: 'Products', counter: 8 },
+  { label: 'Products', counter: 26 },
+  { label: 'Products', counter: 1 },
+  { label: 'Products', counter: 37 },
+  { label: 'Products', counter: 22 },
+  { label: 'Products', counter: 4 },
+  { label: 'Products', counter: 12 },
+];
 
-export const summarySales=[
-  {name:"Costco Wholesale",
-    sold:459,
-    income:600,
-  },
-    {name:"Costco Wholesale",
-    sold:459,
-    income:600,
-  },
-    {name:"Costco Wholesale",
-    sold:459,
-    income:600,
-  },
-    {name:"Costco Wholesale",
-    sold:459,
-    income:600,
-  },
-    {name:"Costco Wholesale",
-    sold:459,
-    income:600,
-  },
-    {name:"Costco Wholesale",
-    sold:459,
-    income:600,
-  }
-]
+export const summarySales = [
+  { name: 'Costco Wholesale', sold: 459, income: 600 },
+  { name: 'Costco Wholesale', sold: 459, income: 600 },
+  { name: 'Costco Wholesale', sold: 459, income: 600 },
+  { name: 'Costco Wholesale', sold: 459, income: 600 },
+  { name: 'Costco Wholesale', sold: 459, income: 600 },
+  { name: 'Costco Wholesale', sold: 459, income: 600 },
+];
 
-export const summaryPromotions=[
-  {company:"Costco Wholesale",
-    name:"Norem ipsum dolor",
-    percent:-40,
-  },
-  {company:"Costco Wholesale",
-    name:"Norem ipsum dolor",
-    percent:-25,
-  },
-  {company:"Costco Wholesale",
-    name:"Norem ipsum dolor",
-    percent:-5,
-  },
-  {company:"Costco Wholesale",
-    name:"Norem ipsum dolor",
-    percent:-24,
-  },
-  {company:"Costco Wholesale",
-    name:"Norem ipsum dolor",
-    percent:-80,
-  },
-    {company:"Costco Wholesale",
-    name:"Norem ipsum dolor",
-    percent:-10,
-  },
-    {company:"Costco Wholesale",
-    name:"Norem ipsum dolor",
-    percent:-80,
-  },
-]
+export const summaryPromotions = [
+  { company: 'Costco Wholesale', name: 'Norem ipsum dolor', percent: -40 },
+  { company: 'Costco Wholesale', name: 'Norem ipsum dolor', percent: -25 },
+  { company: 'Costco Wholesale', name: 'Norem ipsum dolor', percent: -5 },
+  { company: 'Costco Wholesale', name: 'Norem ipsum dolor', percent: -24 },
+  { company: 'Costco Wholesale', name: 'Norem ipsum dolor', percent: -80 },
+  { company: 'Costco Wholesale', name: 'Norem ipsum dolor', percent: -10 },
+  { company: 'Costco Wholesale', name: 'Norem ipsum dolor', percent: -80 },
+];
 
-
+export const countriesSummary = [
+  { name: 'Canada', counter: 4 },
+  { name: 'USA', counter: 4 },
+  { name: 'Italy', counter: 2 },
+  { name: 'Ukraine', counter: 2 },
+  { name: 'Spain', counter: 2 },
+];
