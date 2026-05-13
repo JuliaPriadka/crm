@@ -18,7 +18,7 @@ export default function StatCard({ type, label, counter }: StatCardProps) {
       className={clsx(
         'rounded-sm flex flex-col',
         type === StatCardType.Light && [css.gradient, 'p-7 gap-5'],
-        type === StatCardType.Dark && 'bg-gray-900 p-3 gap-1',
+        type === StatCardType.Dark && 'bg-gray-900 p-3 gap-1 even:text-lime-200 odd:text-purple-200 ',
       )}
     >
       <p
@@ -37,7 +37,7 @@ export default function StatCard({ type, label, counter }: StatCardProps) {
           'font-semibold text-6xl',
           type === StatCardType.Light && 'text-gray-900 ml-6',
           type === StatCardType.Dark &&
-            'even:text-lime-200 odd:text-purple-200 text-right',
+            'text-right',
         )}
       >
         {counter}

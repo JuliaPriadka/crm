@@ -4,17 +4,23 @@ export interface LayoutProps{
     children:React.ReactNode;
     stats:React.ReactNode;
     categories:React.ReactNode;
+    sales:React.ReactNode;
+    promotions:React.ReactNode;
 }
 
-export default function Layout({children,stats,categories}:LayoutProps) {
+export default function Layout({children,stats,categories,sales,promotions}:LayoutProps) {
     return (
         <div >
             {children}
-        <div className="h-38 mt-10 ml-10 mr-10 mb-4">{stats}</div>
-        <div className="h-78 flex gap-10 ml-10 mr-10 mb-4">
-<div className="w-115"></div>
-<div className="w-163">{categories}</div>
+            <main className="grid grid-cols-12 gap-5 py-10 px-6">
+        <div className="h-38 col-span-12">{stats}</div>
+        
+<div className="h-80 col-span-5">{sales}</div>
+<div className="h-80 col-span-7">{categories}</div>
+<div className="h-84 col-span-6"></div>
+<div className="h-84 col-span-6">{promotions}</div>
+       </main>
         </div>
-        </div>
+        
     )
 };
