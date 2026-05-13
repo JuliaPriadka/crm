@@ -25,9 +25,9 @@ export default function StatCard({ type, label, counter }: StatCardProps) {
         className={clsx(
           'font-normal before:rounded-2xl before:w-4 before:h-1',
           type === StatCardType.Light &&
-            'text-xs text-gray-900 before:inline-block before:mr-2 before:align-middle  before:bg-gray-900',
+            'text-xs text-gray-900 before:inline-block before:mr-2 before:align-middle  before:bg-gray-900 ',
           type === StatCardType.Dark &&
-            'text-sm text-zinc-50 before:block before:bg-zinc-50 before:mb-1 text-right',
+            'text-sm text-zinc-50 before:block before:bg-zinc-50 before:mb-1 text-left',
         )}
       >
         {label}
@@ -35,9 +35,9 @@ export default function StatCard({ type, label, counter }: StatCardProps) {
       <p
         className={clsx(
           'font-semibold text-6xl',
-          type === StatCardType.Light && 'text-gray-900',
+          type === StatCardType.Light && 'text-gray-900 ml-6',
           type === StatCardType.Dark &&
-            'even:text-lime-200 odd:text-purple-200',
+            'even:text-lime-200 odd:text-purple-200 text-right',
         )}
       >
         {counter}
